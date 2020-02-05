@@ -1,0 +1,25 @@
+// media
+@mixin desktop {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+//置中
+@mixin positionMid($position) {
+  position: $position;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@mixin circleEl($widthAndHeight) {
+  width: $widthAndHeight;
+  height: $widthAndHeight;
+  border-radius: 50%;
+}
+
+@mixin font-size($font-size) {
+  font-size: $font-size + px;
+  font-size: $font-size / $font-size-base + rem;
+}
